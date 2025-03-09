@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jama Masjid</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Sub-header section -->
+    <section class="sub-header-jamma">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images3/LOGOMAIN.png') }}" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('blog') }}">Upload</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Jama Masjid</h1>
+    </section>
+    
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Jama Mosque, Delhi</h1>
+                <p>The <b>Masjid-i-Jehan-Numa,</b> commonly known as the Jama Masjid of Delhi, is one of the largest Sunni mosques in India.Its builder is the Mughal emperor Shah Jahan, between 1644 and 1656, and inaugurated by its first Imam, Syed Abdul Ghafoor Shah Bukhari. Situated in the Mughal capital of Shahjahanabad (today Old Delhi), it served as the imperial mosque of the Mughal emperors until the demise of the empire in 1857. The Jama Masjid was regarded as a symbolic gesture of Islamic power across India, well into the colonial era. It was also a site of political significance during several key periods of British rule. It remains in active use, and is one of Delhi's most iconic sites, closely identified with the methods of Old Delhi. The mosque structure is a Monument of National Importance.</p>
+                <p>The mosque is located within the historic city of Shahjahanabad, today known as the locality of Old Delhi. Across from the mosque are the Red Fort and Sunehri Masjid. As one of the focal points of Old Delhi, Jama Masjid is surrounded by various commercial centres, such as the historic Chandni Chowk. The tomb of Abul Kalam Azad, Indian independence activist, is located adjacent to the mosque.</p>
+                <a href="https://www.youtube.com/watch?v=53eUIu-EVaw" class="hero-btn red-btn">Watch the Video ▶️</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images3/Jama masjid.jpg') }}" alt="About Image">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Opening Time</h3>
+            <p>7:00 AM - 12:00 PM</p>
+        </div>
+        <div class="info-card">
+            <h3>Entry Fee</h3>
+            <p>No Entry Fee</p>
+        </div>
+        <div class="info-card">
+            <h3>Closing Time</h3>
+            <p>1:30 PM - 6:30 PM</p>
+        </div>
+    </div>
+    
+    <h5>Additional Features That We Provide:</h5>
+
+    <section class="nearby-places">
+        <div class="places-grid">
+            <div class="place-card">
+                <h3>Nearby Restaurants</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Hotels</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Places to Visit</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Weather Condition</h3>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+  
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

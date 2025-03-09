@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qutub Minar</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Sub-header section -->
+    <section class="sub-header-qutub">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images3/LOGOMAIN.png') }}" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('blog') }}">Upload</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Qutub Minar</h1>
+    </section>
+    
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Qutub Minar, Delhi</h1>
+                <p>The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and victory tower comprising the Qutb complex, which lies at the site of Delhi's oldest fortified city, Lal Kot, founded by the Tomar Rajputs. It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India. It was mostly built between 1199 and 1220, contains 399 steps, and is one of the most-frequented heritage spots in the city. After defeating Prithviraj Chauhan, the last Hindu ruler of Delhi before the Ghurid conquest of the region, Qutab-ud-din Aibak initiated the construction of the victory tower, but only managed to finish the first level. It was to mark the beginning of Islamic rule in the region. Successive dynasties of the Delhi Sultanate continued the construction, and, in 1368, Firuz Shah Tughlaq rebuilt the top parts and added a cupola.</p>
+                <p>It can be compared to the 62-metre all-brick Minaret of Jam in Afghanistan, of c. 1190, which was constructed a decade or so before the probable start of the Delhi tower. The surfaces of both are elaborately decorated with inscriptions and geometric patterns. The Qutb Minar has a shaft that is fluted with "superb stalactite bracketing under the balconies" at the top of each stage. In general, minarets were slow to be used in India and are often detached from the main mosque where they exist.</p>
+                <a href="https://www.youtube.com/watch?v=nxQ9my2ur-I" class="hero-btn red-btn">Watch the Video ▶️</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images3/Qutab Minar.jpeg') }}" alt="About Image">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Opening Time</h3>
+            <p>7:00 AM</p>
+        </div>
+        <div class="info-card">
+            <h3>Entry Fee</h3>
+            <p>30/- Per Person</p>
+        </div>
+        <div class="info-card">
+            <h3>Closing Time</h3>
+            <p>5:00 PM</p>
+        </div>
+    </div>
+    
+    <h5>Additional Features That We Provide:</h5>
+
+    <section class="nearby-places">
+        <div class="places-grid">
+            <div class="place-card">
+                <h3>Nearby Restaurants</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Hotels</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Places to Visit</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Weather Condition</h3>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+  
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

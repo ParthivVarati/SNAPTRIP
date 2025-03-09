@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway of India</title>
+    <link rel="stylesheet" href="static/css/tajmahal.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Gateway of India</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Nearby Attractions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="paste link" alt="Gateway of India">
+    </section>
+    <section class="info-section">
+        <div class="container">
+            <h2>Welcome to the Gateway of India</h2>
+            <p>{{ gateway_info }}</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Gateway of India Official Website</p>
+        </div>
+    </footer>
+</body>
+</html>

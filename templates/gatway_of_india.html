@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway of India</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Sub-header section -->
+    <section class="sub-header-gate">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images3/LOGOMAIN.png') }}" alt="Logo"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('blog') }}">Upload</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>The Gateway of India</h1>
+    </section>
+    
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Gateway of India, Mumbai</h1>
+                <p>The <b>Gateway of India</b> is an arch-monument completed in 1924 on the waterfront of Mumbai (Bombay), India. It was erected to commemorate the landing of George V for his coronation as the Emperor of India in December 1911 at Strand Road near Wellington Fountain. He was the first British monarch to visit India.</p>
+                <p>After its construction, the Gateway was used as a symbolic ceremonial entrance to India for important government personnel. The Gateway is also the monument from where the last British troops left in 1948, following Indian independence a year earlier. It is located on the waterfront at an angle, opposite the Taj Mahal Palace and Tower Hotel and overlooks the Arabian Sea. Today, the monument is synonymous with the city of Mumbai, and is amongst its prime tourist attractions. The Gateway is also a gathering spot for locals, street vendors, and photographers soliciting services. It holds significance for the local Jewish community as it has been the spot for Hanukkah celebrations, with the lighting of the menorah, since 2003. There are five jetties located at the Gateway, of which two are used for commercial ferry operations.</p>
+                <a href="https://www.youtube.com/watch?v=VKp5MBt0kj0" class="hero-btn red-btn">Watch the Video ▶️</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images3/Gateway of India.jpeg') }}" alt="About Image">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Opening Time</h3>
+            <p>7:00 AM</p>
+        </div>
+        <div class="info-card">
+            <h3>Entry Fee</h3>
+            <p>No Entry Fee</p>
+        </div>
+        <div class="info-card">
+            <h3>Closing Time</h3>
+            <p>5:00 PM</p>
+        </div>
+    </div>
+    
+    <h5>Additional Features That We Provide:</h5>
+
+    <section class="nearby-places">
+        <div class="places-grid">
+            <div class="place-card">
+                <h3>Nearby Restaurants</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Hotels</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Places to Visit</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Weather Condition</h3>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+  
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

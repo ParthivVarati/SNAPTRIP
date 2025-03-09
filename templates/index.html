@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('blog') }}">UPLOAD</a></li>
+                    <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Travel Recommendation System</h1>
+            <p>Making traveler's work easy by just uploading an image of the place they want to visit.</p>
+            <a href="{{ url_for('blog') }}" class="hero-btn">Click Here to Upload</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="course">
+        <h1>Services We Offer</h1>
+        <p>Everything we do is to make your travel easy.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Location Detection</h3>
+                <p>Our advanced technology make your work easy by identifying the location you want to visit just by analysing the image you upload, all you need to do is to upload the image of the place you want to visit.</p>
+            </div>
+            <div class="course-col">
+                <h3>About The Location</h3>
+                <p>We provide all the history and everything you need to know about that place, we provie the hisory, photos, best time to vist that place everything you need at on place.</p>
+            </div>
+            <div class="course-col">
+                <h3>Trip Suggesitions</h3>
+                <p>We provide everything for you to plan your trip like nearby hotels, restaurent, weather everything you need to make you plan to vist that place.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Section -->
+    <section class="campus">
+        <h1>Our Top Locations</h1>
+        <div class="row">
+            <div class="campus-col">
+                <img src="{{ url_for('static', filename='images/taj2.jpg') }}">
+                <div class="layer">
+                    <h3>TAJ MAHAL</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{{ url_for('static', filename='images/niagra2.jpg') }}">
+                <div class="layer">
+                    <h3>NIAGRA WATERFALLS</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{{ url_for('static', filename='images/KASHI.jpg') }}">
+                <div class="layer">
+                    <h3>KASHI</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!-- Call To Action Section -->
+    <section class="cta">
+        <h1>For Any Queries<br>Click Here</h1>
+        <a href="{{ url_for('contact') }}" class="hero-btn">CONTACT US</a>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

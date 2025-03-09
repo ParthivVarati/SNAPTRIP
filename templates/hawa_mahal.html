@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawa Mahal</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Sub-header section -->
+    <section class="sub-header-hawa">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images3/LOGOMAIN.png') }}" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('blog') }}">Upload</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Hawa Mahal</h1>
+    </section>
+    
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Hawa Mahal, Rajasthan</h1>
+                <p>The Hawa Mahal is a palace in the city of Jaipur, Rajasthan, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers.
+                    Hawa Mahal is known as the <b>palace of winds</b>. Maharaja Sawai Pratap Singh built it palace in 1799. Hawa Mahal is considered to be unique as it has many small windows and balconies that seem like a honeycomb.
+                    The structure was built in 1799 by the Maharaja Sawai Pratap Singh, grandson of Maharaja Sawai Jai Singh, the founder of the city of Jhunjhunu in the state of Rajasthan. He was so inspired by the unique structure of Khetri Mahal that he built this grand and historical palace.</p>
+                <p>It was designed by Lal Chand Ustad. Its five-floor exterior is akin to a honeycomb with its 953 small windows called Jharokhas decorated with intricate latticework. The original intent of the lattice design was to allow royal ladies to observe everyday life and festivals celebrated in the street below without being seen. This architectural feature also allowed cool air from the Venturi effect to pass through, thus making the whole area more pleasant during the high temperatures in summer. Many people see the Hawa Mahal from the street view and think it is the front of the palace, but it is the back.</p>
+                <a href="https://www.youtube.com/watch?v=jSlrNR2hAqc" class="hero-btn red-btn">Watch the Video ▶️</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images3/Hawa Mahal.jpeg') }}" alt="About Image">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Opening Time</h3>
+            <p>9:00 AM</p>
+        </div>
+        <div class="info-card">
+            <h3>Entry Fee</h3>
+            <p>10/- per head</p>
+        </div>
+        <div class="info-card">
+            <h3>Closing Time</h3>
+            <p>4:30 PM</p>
+        </div>
+    </div>
+    
+    <h5>Additional Features That We Provide:</h5>
+
+    <section class="nearby-places">
+        <div class="places-grid">
+            <div class="place-card">
+                <h3>Nearby Restaurants</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Hotels</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Places to Visit</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Weather Condition</h3>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

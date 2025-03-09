@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Temple</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Sub-header section -->
+    <section class="sub-header-golden">
+        <nav>
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='images3/LOGOMAIN.png') }}" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('blog') }}">Upload</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Golden Temple</h1>
+    </section>
+    
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Golden Temple, Amritsar</h1>
+                <p>The Golden Temple also known as the <b>Harmandir Sāhib lit</b>. <b>House of God</b>, Punjabi: harimandara sāhiba is a gurdwara located in Amritsar, Punjab, India. It is the pre-eminent spiritual site of Sikhism. It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib Kartarpur in Kartarpur, and Gurdwara Janam Asthan in Nankana Sahib.</p>
+                <p>The Golden Temple is spiritually the most significant shrine in Sikhism. It became a centre of the Singh Sabha Movement between 1883 and the 1920s, and the Punjabi Suba movement between 1947 and 1966. In the early 1980s, the gurdwara became a centre of conflict between the Indian government and a radical movement led by Jarnail Singh Bhindranwale. In 1984, Prime Minister Indira Gandhi sent in the Indian Army as part of Operation Blue Star, leading to the deaths of thousands of soldiers, militants and civilians, as well as causing significant damage to the gurdwara and the destruction of the nearby Akal Takht. The gurdwara complex was rebuilt again after the 1984 attack on it.</p>
+                <a href="https://www.youtube.com/watch?v=4IvdmTK2Un4" class="hero-btn red-btn">Watch the Video ▶️</a>
+            </div>
+            <div class="about-col">
+                <img src="{{ url_for('static', filename='images3/goldentemple.jpg') }}" alt="About Image">
+
+            </div>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Opening Time</h3>
+            <p>4:00 AM</p>
+        </div>
+        <div class="info-card">
+            <h3>Entry Fee</h3>
+            <p>Free</p>
+        </div>
+        <div class="info-card">
+            <h3>Closing Time</h3>
+            <p>10:00 PM</p>
+        </div>
+    </div>
+    
+    <h5>Additional Features That We Provide:</h5>
+
+    <section class="nearby-places">
+        <div class="places-grid">
+            <div class="place-card">
+                <h3>Nearby Restaurants</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Hotels</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Nearby Places to Visit</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="place-card">
+                <h3>Weather Condition</h3>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <a href="https://github.com/ParthivVarati"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/parthiv_varma_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naga-parthiv/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
