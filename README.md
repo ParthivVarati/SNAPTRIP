@@ -14,10 +14,10 @@ Tech Stack: Flask, Python, OpenCV, MySQL, HTML, CSS, JavaScript.
 3. Trip Suggestions – Plan your trip effortlessly with recommendations for nearby hotels, restaurants, weather updates, and more.
 
 # Licence
-This project is licensed under the terms of the [GNU General Public License v3.0], (https://www.gnu.org/licenses/gpl-3.0.en.html).
+This project is licensed under the terms of the [GNU General Public License v3.0], (doc:https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 You are free to use, modify, and distribute this software under the following terms:
 
 You must include the original copyright and license notice in any copies or substantial portions of the software.
 If you distribute modified versions of the software, they must also be licensed under GPL v3.
-For more details, see the full [GPL v3 License], (https://www.gnu.org/licenses/gpl-3.0.en.html).
+For more details, see the full [GPL v3 License], (doc:https://www.gnu.org/licenses/gpl-3.0.en.html).
